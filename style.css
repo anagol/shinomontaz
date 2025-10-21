@@ -81,9 +81,9 @@ header {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 
 }
 .logo:hover {
@@ -103,6 +103,7 @@ header {
 
 .contact-info.contact-info-center {
     text-align: center;
+    transform: scale(0.8);
 }
 
 .contact-info .primary-color-text {
