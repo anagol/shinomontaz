@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шиномонтаж</title>
+    <meta name="description"
+          content="Шиномонтаж. Быстро и качественно">
+    <meta name="keywords"
+          content="">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+</head>
+
+<body>
+<header>
+    <div class="container header-content">
+        <img class="logo" src="img/master_logo.jpg" alt="Ремонт стиральных машин на дому в Москве">
+        <div class="contact-info contact-info-center">
+            <a href="tel:+79262134302" class="btn btn-primary">+375 33 61 333 66</a>
+            <p class="primary-color-text"><b>Звоните мастеру!</b> <br> <b>Ежедневно с 9:00 до 18:00</b>
+                <br> <b>Заявки через сайт - круглосуточно</b>
+            </p>
+        </div>
+    </div>
+</header>
+
+<section id="calendar-section" class="container">
+    <h2>Запись на ремонт</h2>
+    <p>Выберите удобную дату и время для визита мастера.</p>
+    <div id="calendar"></div>
+    <div id="time-slots" class="hidden"></div>
+</section>
+
+<section class="prices">
+    <div class="container">
+        <h2>Цены на шиномонтаж</h2>
+        <div class="price-list">
+            <div class="price-item">
+                <span class="price-name">Шиномонтаж одного колеса</span>
+                <span class="price-value">от 15 руб.</span>
+            </div>
+            <div class="price-item">
+                <span class="price-name">Ремонт одного прокола </span>
+                <span class="price-value">от 25 рублей</span>
+            </div>
+            <div class="price-item">
+                <span class="price-name">Ремонт/прокатка диска</span>
+                <span class="price-value">от 50 рублей (включая шиномонтаж)</span>
+            </div>
+        </div>
+        <div class="price-info">
+            <p>*Цена зависит от вида диска, диаметра колеса и количества грузов.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-us">
+    <div class="container">
+        <h2>Почему нам доверяют клиенты</h2>
+        <div class="why-us-grid">
+            <div class="feature-item">
+                <span class="feature-item-icon">⭐</span>
+                <h3>Качество</h3>
+            </div>
+            <div class="feature-item">
+                <span class="feature-item-icon">🛡️</span>
+                <h3>Гарантия</h3>
+            </div>
+            <div class="feature-item">
+                <span class="feature-item-icon">💸</span>
+                <h3>Доступные цены</h3>
+            </div>
+            <div class="feature-item">
+                <span class="feature-item-icon">⚡</span>
+                <h3>Скорость работы</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Заполните данные</h3>
+        <form id="modal-form">
+            <input type="hidden" id="selected-date" name="date">
+            <input type="hidden" id="selected-time" name="time">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Ваш телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="brand">Марка машины:</label>
+            <input type="text" id="brand" name="brand" required>
+            <label for="model">Модель:</label>
+            <input type="text" id="model" name="model">
+            <label for="fault">Вид работы</label>
+            <input type="text" id="fault" name="fault" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="urgent" name="urgent">
+                <label for="urgent">Срочный ремонт</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>Ремонт стиральных машин на дому в Москве. &copy; 2024</p>
+        <p>
+            <a href="tel:+79262134302">+7 926 213-43-02</a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
